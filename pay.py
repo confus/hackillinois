@@ -25,8 +25,9 @@ def pay_pocket_change(payer_id, amount, service):
 
     print(payment_response.text)
 
-    print(requests.post(
-        "http://api.reimaginebanking.com/transfers/{}?key={}".format(pocket_change_id, api_key),
-    ).text)
+    # list pocket change's transfers
+    # print(requests.post(
+    #     "http://api.reimaginebanking.com/transfers/{}?key={}".format(pocket_change_id, api_key),
+    # ).text)
 
 pay_pocket_change("56c66be6a73e492741507b93", 1, "Spotify Premium")
