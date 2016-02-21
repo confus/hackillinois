@@ -18,5 +18,4 @@ response_customers = requests.get(url_customers)
 print("\nCustomers:", "\n------------------------------------------")
 for d in response_customers.json():
     for key in d:
-        print(key)
-        print(d[key])
+        print(key, "\t\t", d[key])
