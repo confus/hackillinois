@@ -1,4 +1,4 @@
-# accounts
+# 'accounts' URLs
 def url_get_all_accounts(api_key):
     return "http://api.reimaginebanking.com/accounts?key={}".format(api_key)
 
@@ -16,8 +16,10 @@ def url_account_modify(account_id, api_key):
 
 def url_account_delete(account_id, api_key):
     return "http://api.reimaginebanking.com/accounts/{}?key={}".format(account_id, api_key)
-
-# purchases
+#------------------------------------------------------------------------------
+# 'customer' URLs
+# 'merchants' URLs
+# 'purchases' urls
 def url_get_purchases_aid(account_id, api_key):
     return "http://api.reimaginebanking.com/accounts/{}/purchases?key={}".format(account_id, api_key)
 
